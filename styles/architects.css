@@ -89,7 +89,8 @@ nav {
 
 .hero,
 .team-section,
-.features-section {
+.features-section,
+.some-fect {
   margin-top: 4rem;
 }
 
@@ -218,4 +219,49 @@ nav {
 .features-exp h2 {
   font-size: 4rem;
   margin-bottom: 8px;
+}
+
+/* Some Fact */
+
+.some-content {
+  max-width: 542px;
+}
+
+.some-content h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.some-content p,
+.icon-card p {
+  line-height: 30px;
+}
+
+.icon-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+  padding: 4rem;
+}
+
+.icon-card {
+  width: 242px;
+  height: 242px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-card img {
+  width: 50px;
+}
+
+.icon-card h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 15px 0px;
 }
