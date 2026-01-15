@@ -309,7 +309,7 @@ footer {
 
 /* Mobile Responsive */
 
-@media screen and (max-width: 572px) {
+@media screen and (max-width: 572.5px) {
   .auto-container {
     padding: 0 20px;
   }
@@ -402,6 +402,81 @@ footer {
 
   footer p {
     font-size: 14px;
+    padding: 20px 0;
+  }
+}
+
+/* Responsive for tablet devices */
+
+@media screen and (min-width: 572.6px) and (max-width: 991px) {
+  .auto-container {
+    margin: 3.5rem auto;
+    padding: 0 40px;
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+  .nav-text {
+    font-size: 2rem;
+  }
+
+  /* .nav-links {
+    gap: 1rem;
+  } */
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .team-section {
+    flex-direction: column-reverse;
+    align-items: start;
+    gap: 2rem;
+  }
+
+  .features-section {
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 3.5rem;
+  }
+
+  .features-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .features-exp {
+    bottom: 20px;
+    left: 20px;
+    padding: 1.5rem 2.5rem;
+  }
+
+  .features-exp h2 {
+    font-size: 3rem;
+  }
+
+  .icon-cards {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 3rem;
+    margin-top: 2rem;
+    padding: 0 3rem;
+  }
+
+  .spons-img {
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+
+  footer {
+    margin-top: 80px !important;
+    margin-bottom: 30px !important;
+  }
+
+  footer p {
+    font-size: 16px;
     padding: 20px 0;
   }
 }
