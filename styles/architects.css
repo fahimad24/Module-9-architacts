@@ -30,9 +30,6 @@
 }
 
 /* header styles */
-header {
-  background: rgba(255, 144, 14, 0.1);
-}
 
 .btn-primary {
   background-color: #ff900e;
@@ -55,6 +52,7 @@ header {
 
 header {
   padding: 2rem 0 4rem;
+  background: rgba(255, 144, 14, 0.1);
 }
 
 nav {
@@ -202,7 +200,6 @@ nav {
 .features-img {
   position: relative;
   width: 100%;
-  object-fit: contain;
 }
 
 .features-exp {
@@ -284,10 +281,9 @@ nav {
 }
 
 .spons-img {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  justify-items: center;
-  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
   margin-top: 70px;
 }
 
@@ -309,4 +305,103 @@ footer {
   margin-top: 130px !important;
   margin-bottom: 70px !important;
   border-radius: 8px;
+}
+
+/* Mobile Responsive */
+
+@media screen and (max-width: 572px) {
+  .auto-container {
+    padding: 0 20px;
+  }
+
+  .btn-primary {
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  nav,
+  .nav-links,
+  .features-section {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    margin-top: 10px;
+  }
+
+  .hero {
+    margin-top: 1rem;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  /* meet our team */
+
+  .team-section {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .team-images {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .features-section {
+    gap: 2rem;
+  }
+
+  .features-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .features-exp {
+    bottom: 20px;
+    left: 20px;
+    padding: 1rem 2rem;
+  }
+
+  .features-exp h2 {
+    font-size: 2.25rem;
+  }
+
+  .icon-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+
+  .icon-card {
+    width: 100%;
+    height: auto;
+    gap: 8px;
+    padding: 2rem 0;
+  }
+
+  .icon-card h2 {
+    font-size: 2rem;
+    margin: 5px 0px;
+  }
+
+  .spons-cont {
+    margin-top: 50px;
+  }
+
+  .spons-img {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  footer {
+    margin: 50px 0 !important;
+  }
+
+  footer p {
+    font-size: 14px;
+    padding: 20px 0;
+  }
 }
